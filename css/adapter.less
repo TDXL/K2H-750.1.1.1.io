@@ -1,0 +1,13 @@
+// 把所有的适配的代码都写在这里
+
+.adapter(@width,@fenshu) {
+   @media screen and (width: @width) {
+        html {
+            font-size: @width /@fenshu;
+        }
+    } 
+}
+
+.adapter(320px, 20);
+.adapter(360px, 20);
+.adapter(375px, 20);
